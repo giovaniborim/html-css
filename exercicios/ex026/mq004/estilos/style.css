@@ -16,14 +16,14 @@ html{
 }
 
 body{
-    background: black url(../imagens/back-phone.jpg);
+    background: black url(../imagens/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 main{
     background-color: rgba(255, 255, 255, 0.774);
-    width: 90vw;
+    width: 400px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -43,7 +43,7 @@ img{
 }
 
 img#phone{
-    display: none;
+    display: block;
 }
 
 img#tablet{
