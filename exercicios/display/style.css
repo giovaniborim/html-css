@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    
+}
+
+.div {
+    background-color: #111;
+    border-radius: 4px;
+    color: white;
+    margin: 20px 80px; 
+    padding: 30px;
+}
+
+h2{
+    margin: 0px;
+}
+
+.modelo{
+    color: #b2b2b2;
+}
+.valor{
+    color: #febe01;
+}
+
+h2, p {
+    padding-left: 10px ;
+}
+
+button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    background-color: #febe01;
+    color:#332200 ;
+    border-radius: 4px;
+    border: none;
+}
