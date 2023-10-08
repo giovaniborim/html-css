@@ -62,8 +62,8 @@ p{
 }
 .menu a:hover{
     border: 2px solid #ee2211;
-
-
+    
+    
 }
 .conteudo{
     display: grid;
@@ -96,6 +96,11 @@ p{
     right: -30px;
 }
 
+.introducao-cover img{
+    object-fit: cover;
+    height: 100%;
+}
+
 
 
 .botao{
@@ -120,12 +125,13 @@ p{
     align-self: center;
     background-image: url(imagens/onda.svg);
     background-size: contain;
+    /* word-break: break-all; */
 }
 
 .vantagens{
     background-color: #ffffff;
     padding: 40px;
-
+    
 }
 .vantagens-item{
     display: grid;
@@ -141,7 +147,7 @@ p{
 
 .vantagens-item:hover{
     border-color:#ee2211;
-
+    
 }
 
 
@@ -158,4 +164,48 @@ p{
     padding: 20px;
     box-sizing: border-box;
     
+}
+
+@media (max-width: 1000px) {
+
+
+    .conteudo-vantagem{
+        grid-template-columns: 1fr;
+    }
+    
+    .subtitulo{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .header{
+        gap: 30px;
+    }
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+    .introduçao{
+        text-align: left;
+        justify-items: start;
+    }
+    .introduçao::before{
+        display: none;
+    }
+
+    .subtitulo{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:390px){
+    .subtitulo{
+        font-size: 2rem;
+    }
 }
