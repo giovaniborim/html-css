@@ -10,6 +10,8 @@ body{
     margin-top: 60px;
 }
 
+
+
 img{
     max-width: 100%;
     display: block;
@@ -19,14 +21,27 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
 p, h1, h2, h3{
     margin: 0px;
 
 }
 
 p{
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.3;
+}
+
+.header{
+    display: grid;
+    justify-items: center;
+    gap: 60px;
 }
 
 .menu{
@@ -38,12 +53,18 @@ p{
 
 .menu a{
     background-color: #ffffff;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     border-radius: 4px;
     color: black;
     text-transform: uppercase;
+    display: block;
+    border: 2px solid #ffffff
 }
+.menu a:hover{
+    border: 2px solid #ee2211;
 
+
+}
 .conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,32 +81,45 @@ p{
     align-content: center;
     justify-items: end;
 }
-.detalhe{
+
+.introduçao h1{
+    font-size: 2rem;
+}
+
+.introduçao::before{
+    content: "";
     width: 60px;
     height: 4px;
     background-color: #ee2211;
     position: absolute;
     top: 30px;
     right: -30px;
-    
 }
+
+
 
 .botao{
     background: #ee2211;  
     text-decoration: none;
     color: #ffffff;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     border-radius: 4px;
     text-transform: uppercase;
 }
 
+.botao:hover{
+    background-color:#900 ;
+}
+
 .subtitulo{
-    font-size: 64px;
+    font-size: 4rem;
     text-transform: uppercase;
     color: #c6c6c6;
     text-align: right;
     padding: 40px;
     align-self: center;
+    background-image: url(imagens/onda.svg);
+    background-size: contain;
 }
 
 .vantagens{
@@ -97,11 +131,23 @@ p{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
-    padding: 20px;
+    padding: 10px;
+    border-left:4px solid transparent
 }
+
+.vantagens-item:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+.vantagens-item:hover{
+    border-color:#ee2211;
+
+}
+
+
 .vantagens-item p {
     grid-column: 2;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     
 }
 
@@ -109,7 +155,7 @@ p{
     background-color: #ffffff;
     width: 100%;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     box-sizing: border-box;
     
 }
